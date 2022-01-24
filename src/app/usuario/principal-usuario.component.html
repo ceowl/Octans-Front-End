@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-4 mx-auto">
+      <form>
+          <div class="mb-3">
+           <button class="btn btn-outline-success" (click)="mensaje()"><i class="fas fa-search"></i> Consultar</button>
+           <button class="btn btn-outline-success" routerLink="/nuevo"><i class="fas fa-user-plus"></i> Crear</button>
+           <button type="reset" class="btn btn-outline-success"><i class="fas fa-times"></i> Limpiar</button>
+          </div>
+          <div class="mb-3">
+           <label for="nombre">Nombre</label>
+           <input type="text" class="form-control" name="dato" [(ngModel)]="dato">
+          </div>
+      </form>
+    </div>
+  </div>
+</div>

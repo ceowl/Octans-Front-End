@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+          <a class="btn btn-outline-light" routerLink="/''"><i class="fas fa-arrow-circle-left"></i>Volver</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scoper="col">Id</th>
+      <th scoper="col">Nombre</th>
+      <th scoper="col">Rol</th>
+      <th scoper="col">Activo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-active">
+      <td><a class="nav-link" style="color: #ffffff">{{usuario.id}}</a></td>
+      <td><a class="nav-link" style="color: #ffffff">{{usuario.nombre}}</a></td>
+      <td><a class="nav-link" style="color: #ffffff">{{usuario.rol.nombre}}</a></td>
+      <td><a class="nav-link" style="color: #ffffff">{{usuario.activo}}</a></td>
+    </tr>
+  </tbody>
+</table>

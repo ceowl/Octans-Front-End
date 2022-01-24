@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-4 mx-auto">
+      <form (ngSubmit)="onCreate()">
+        <div class="mb-3">
+          <button type="submit" class="btn btn-outline-success">Guardar</button>
+          <button type="submit" class="btn btn-outline-success" disabled="disabled">Editar</button>
+          <button type="submit" class="btn btn-outline-success" disabled="disabled">Eliminar</button>
+        </div>
+        <div class="mb-3">
+          <label for="id">Id</label>
+          <input type="text" class="form-control" id="id" disabled="disabled">
+        </div>
+        <div class="mb-3">
+          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
+        </div>
+        <div>
+          <label for="rol">Rol</label>
+          <select class="form-select form-select-sm mb-3" id="rol" name="rol" aria-label=".form-select-sm example" [(ngModel)]="rol.id" required>
+            <option value="1" selected>Administrador</option>
+            <option value="2">Auditor</option>
+            <option value="3">Auxiliar</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1">Activo</label><br/>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Si" [(ngModel)]="activo" required>
+            <label class="form-check-label" for="exampleRadios1">Si</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="No" [(ngModel)]="activo" required>
+            <label class="form-check-label" for="exampleRadios2">No</label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
